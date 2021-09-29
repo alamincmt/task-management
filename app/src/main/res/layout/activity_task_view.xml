@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.TaskViewActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:elevation="5dp"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="15dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:text="Subject : What is Lorem Ipsum?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_below="@id/tv_subject"
+            android:id="@+id/tv_submit_date"
+            android:text="Submit Date : 10-07-2021"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/tv_submit_date"
+            android:id="@+id/tv_working_date"
+            android:text="Working Date : 10-07-2021 - 15-07-2021"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/tv_working_date"
+            android:id="@+id/tv_status"
+            android:text="Status : Pending"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consl"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_max="wrap"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:text="@string/example_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_below="@id/consl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_sendmessage"
+                android:textSize="14sp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/send_message_btn"
+                android:text="@string/send_n_message"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_makecomplete"
+                android:textSize="14sp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/send_message_btn"
+                android:text="@string/make_complete"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

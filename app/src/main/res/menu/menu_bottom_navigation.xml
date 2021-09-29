@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_calender"
+        android:icon="@drawable/ic_calender"
+        android:title="Calender" />
+    <item
+        android:id="@+id/nav_tasks"
+        android:icon="@drawable/ic_task"
+        android:title="Tasks" />
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_report"
+        android:title="Report" />
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/ic_more"
+        android:title="More" />
+</menu>

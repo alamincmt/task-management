@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:max="http://schemas.applovin.com/android/1.0"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/login_top_bg"
+            android:orientation="vertical"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent">
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:src="@drawable/t_letter_logo"
+            sweet:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            sweet:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            sweet:layout_constraintStart_toStartOf="@+id/linearLayout"
+            sweet:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            sweet:cardCornerRadius="10dp"
+            sweet:layout_constraintBottom_toBottomOf="parent"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/log_in"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    sweet:layout_constraintEnd_toEndOf="parent"
+                    sweet:layout_constraintStart_toStartOf="parent"
+                    sweet:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/et_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/login_edittext_bg"
+                    android:hint="UserID"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="20dp"
+                    android:singleLine="true"
+                    sweet:layout_constraintEnd_toEndOf="parent"
+                    sweet:layout_constraintStart_toStartOf="parent"
+                    sweet:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/login_edittext_bg"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:singleLine="true"
+                    sweet:layout_constraintEnd_toEndOf="parent"
+                    sweet:layout_constraintStart_toStartOf="parent"
+                    sweet:layout_constraintTop_toBottomOf="@+id/et_userid" />
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/login_button_bg"
+                    android:gravity="center"
+                    android:text="Log In"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    sweet:layout_constraintBottom_toBottomOf="parent"
+                    sweet:layout_constraintEnd_toEndOf="parent"
+                    sweet:layout_constraintStart_toStartOf="parent"
+                    sweet:layout_constraintTop_toBottomOf="@id/et_password" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

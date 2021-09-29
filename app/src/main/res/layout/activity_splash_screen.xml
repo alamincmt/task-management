@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:max="http://schemas.applovin.com/android/1.0"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/t_letter_logo"
+        sweet:layout_constraintEnd_toEndOf="parent"
+        sweet:layout_constraintHorizontal_bias="0.496"
+        sweet:layout_constraintStart_toStartOf="parent"
+        sweet:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/te_appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        sweet:layout_constraintEnd_toEndOf="parent"
+        sweet:layout_constraintStart_toStartOf="parent"
+        sweet:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/bastobayone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        sweet:layout_constraintBottom_toTopOf="@+id/rl"
+        sweet:layout_constraintEnd_toEndOf="parent"
+        sweet:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        sweet:layout_constraintBottom_toBottomOf="parent"
+        sweet:layout_constraintEnd_toEndOf="parent"
+        sweet:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_item1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/a2i_logo" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_item2"
+            android:layout_marginStart="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ict_division_logo" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
